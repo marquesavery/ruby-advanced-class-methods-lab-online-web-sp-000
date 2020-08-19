@@ -39,6 +39,7 @@ class Song
     else
       return false
     end
+  end
 
 
   def save

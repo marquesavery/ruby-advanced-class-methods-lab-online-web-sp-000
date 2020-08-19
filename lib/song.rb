@@ -29,18 +29,14 @@ class Song
   end
 
   def self.find_by_name(name)
-    # binding.pry
-    # if @@all.include?(name)
+    @@all.any?{|value| value.name == name}
       @@all.each do |value|
-      binding.pry
+      # binding.pry
         if value.name == name
           return value
         end
       end
-    # else
-    #   return false
-    # end
-  end
+      
 
 
   def save

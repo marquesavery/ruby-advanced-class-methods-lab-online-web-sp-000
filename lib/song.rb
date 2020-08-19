@@ -33,6 +33,8 @@ class Song
       # binding.pry
       if value.name == name
         return value
+      else
+        false
       end
     end
   end

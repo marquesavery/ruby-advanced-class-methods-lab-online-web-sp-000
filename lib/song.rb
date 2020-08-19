@@ -32,7 +32,7 @@ class Song
     @@all.each do |value|
       binding.pry
       if value.name == name
-        value
+        return value
       end
     end
   end

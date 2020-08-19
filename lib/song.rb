@@ -29,7 +29,7 @@ class Song
   end
 
   def self.find_by_name(name)
-    @@all.select do |value|
+    @@all.find do |value|
       value.name == name
     end
   end

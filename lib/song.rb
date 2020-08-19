@@ -34,7 +34,7 @@ class Song
       if value.name == name
         return value
       else
-        false
+        return false
       end
     end
   end

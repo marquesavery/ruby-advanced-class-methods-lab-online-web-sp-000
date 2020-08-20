@@ -38,7 +38,8 @@ class Song
     if self.find_by_name(name)
     else
       self.create_by_name(name)
-      
+    end
+
 
 
     # if @@all.any?{|value| value.name == name}

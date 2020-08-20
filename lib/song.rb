@@ -47,6 +47,11 @@ class Song
     @@all.sort_by{|value| value.name}
   end
 
+  def self.new_from_filename(filename)
+    seperate = filename.split("-")
+
+  end
+
 
   def save
     self.class.all << self

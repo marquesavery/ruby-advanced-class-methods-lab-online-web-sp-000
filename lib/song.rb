@@ -42,15 +42,6 @@ class Song
   end
 
 
-
-    # if @@all.any?{|value| value.name == name}
-    #   return value
-    #
-    # end
-
-  end
-
-
   def save
     self.class.all << self
   end

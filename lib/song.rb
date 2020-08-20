@@ -56,6 +56,16 @@ class Song
     song
   end
 
+  def self.create_from_filename(filename)
+    self.create_by_name(name)
+
+    seperate = filename.split("-")
+    seperate_song = seperate[1].split(".")
+    song.artist_name = seperate[0].strip
+    song.name = seperate_song[0].strip
+    song
+  end
+
 
   def save
     self.class.all << self

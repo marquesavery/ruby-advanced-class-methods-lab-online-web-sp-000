@@ -36,7 +36,8 @@ class Song
 
   def self.find_or_create_by_name(name)
     if @@all.any?{|value| value.name == name}
-      
+      return value
+
     end
 
   end

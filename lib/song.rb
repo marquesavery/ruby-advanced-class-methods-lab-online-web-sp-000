@@ -51,8 +51,8 @@ class Song
     song = Song.new
     seperate = filename.split("-")
     seperate_song = seperate[1].split(".")
-    @artist_name = seperate[1].strip
-    @name = seperate_song[0].strip
+    song.artist_name = seperate[1].strip
+    song.name = seperate_song[0].strip
     song
   end
 

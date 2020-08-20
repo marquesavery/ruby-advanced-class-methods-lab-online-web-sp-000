@@ -52,7 +52,8 @@ class Song
     seperate_song = seperate[1].split(".")
     @artist_name = seperate[1].strip
     @name = seperate_song[0].strip
-
+    song
+    
 
 
   end
